@@ -1,28 +1,29 @@
-document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM Content Loaded Successfully.')
+document.addEventListener('DOMContentLoaded', () => {
 });
 
-const container = document.querySelectorAll('.card');
+const card = document.querySelectorAll('.card');
 
-let text = document.querySelector('.copy-color').innerHTML;
-const copyContent = async () => {
-    try {
-        await navigator.clipboard.writeText(text);
-        console.log(text);
-    } catch (err) {
-        console.error('Failed to copy: ', err);
-    }
-}
-
-container.forEach(element => {
+card.forEach(element => {
     element.addEventListener('mouseover', () => {
         removeActive();
         element.classList.toggle('active');
-        })
+    })
 });
 
 function removeActive() {
-    container.forEach(element => {
+    card.forEach(element => {
         element.classList.remove('active');
     })
+} 
+
+function copyContent(event, selector) {
+    const targetElement = event.target.closest('.card').querySelector(selector);
+    const text = targetElement.innerHTML;
+    navigator.clipboard.writeText(text)
+        .then(() => {
+            console.log('Content copied to clipboard');
+        })
+        .catch(err => {
+            console.error('Failed to copy:', err);
+        });
 }
