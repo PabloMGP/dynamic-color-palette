@@ -37,6 +37,7 @@ body {
 
 .second-row {
     display: flex;
+    margin-bottom: 70px;
 }
 
 .cool-colors {
