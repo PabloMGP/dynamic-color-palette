@@ -1,5 +1,7 @@
 # Dynamic Color Palette
 
+## You can access a live version of this app [here](https://main--chic-gelato-a7b6ce.netlify.app/).
+
 ## Overview
 I created this Dynamic Color Palette as a web application that provides users with a visually appealing and interactive way to explore and copy color values. It presents a collection of color cards organised into three categories: Warm Colors, Cool Colors, and Neutral Colors. Each color card displays the color name, HEX code, RGB code, and a "Copy to Clipboard" button. When a user clicks on the "Copy to Clipboard" button, the corresponding HEX code is copied to their clipboard, making it easy to use the color in their projects.
 
