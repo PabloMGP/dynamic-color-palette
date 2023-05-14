@@ -11,37 +11,67 @@
 
 <body>
 
-    
-    <div class="container">
+    <div class="first-row">
+        <div class="container">
+            <div class="warm-colors">
+                <p class="category-title">Warm Colors</p>
+                <div class="card">
+                    <h2>Orange</h2>
+                    <p>HEX #ff6b00</p>
+                    <p>RGB 255, 107, 0</p>
+                    <p class="hidden copy-color">#ff6b00</p>
+                    <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
+                </div>
 
-        <div class="warm-colors">
-            <p class="category-title">Warm Colors</p>
-            <div class="card">
-                <h2>Orange</h2>
-                <p>HEX #ff6b00</p>
-                <p>RGB 255, 107, 0</p>
-                <p class="hidden copy-color">#ff6b00</p>
-                <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
-            </div>
+                <div class="card">
+                    <h2>Yellow</h2>
+                    <p>HEX #ffc700</p>
+                    <p>RGB 255, 199, 0</p>
+                    <p class="hidden copy-color">#ffc700</p>
+                    <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
+                </div>
 
-
-            <div class="card">
-                <h2>Yellow</h2>
-                <p>HEX #ffc700</p>
-                <p>RGB 255, 199, 0</p>
-                <p class="hidden copy-color">#ffc700</p>
-                <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
-            </div>
-
-            <div class="card">
-                <h2>Green</h2>
-                <p>HEX #95d600</p>
-                <p>RGB 149, 214, 0</p>
-                <p class="hidden copy-color">#95d600</p>
-                <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
+                <div class="card">
+                    <h2>Green</h2>
+                    <p>HEX #95d600</p>
+                    <p>RGB 149, 214, 0</p>
+                    <p class="hidden copy-color">#95d600</p>
+                    <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
+                </div>
             </div>
         </div>
+        
+        <div class="container-two">
+            <div class="neutral-colors">
+                <p class="category-title">Neutral Colors</p>
+                <div class="card">
+                    <h2>Light Gray</h2>
+                    <p>HEX #e5eceb</p>
+                    <p>RGB 229, 236, 235</p>
+                    <p class="hidden copy-color">#e5eceb</p>
+                    <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
+                </div>
 
+                <div class="card">
+                    <h2>Dark Gray</h2>
+                    <p>HEX #7d868c</p>
+                    <p>RGB 125, 134, 140</p>
+                    <p class="hidden copy-color">#7d868c</p>
+                    <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
+                </div>
+
+                <div class="card">
+                    <h2>Black</h2>
+                    <p>HEX #333e48</p>
+                    <p>RGB 51, 62, 72</p>
+                    <p class="hidden copy-color">#333e48</p>
+                    <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="second-row">
         <div class="cool-colors">
             <p class="category-title">Cool Colors</p>
             <div class="card">
@@ -68,39 +98,11 @@
                 <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
             </div>
         </div>
-
-        <div class="neutral-colors">
-            <p class="category-title">Neutral Colors</p>
-            <div class="card">
-                <h2>Light Gray</h2>
-                <p>HEX #e5eceb</p>
-                <p>RGB 229, 236, 235</p>
-                <p class="hidden copy-color">#e5eceb</p>
-                <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
-            </div>
-
-            <div class="card">
-                <h2>Dark Gray</h2>
-                <p>HEX #7d868c</p>
-                <p>RGB 125, 134, 140</p>
-                <p class="hidden copy-color">#7d868c</p>
-                <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
-            </div>
-
-            <div class="card">
-                <h2>Black</h2>
-                <p>HEX #333e48</p>
-                <p>RGB 51, 62, 72</p>
-                <p class="hidden copy-color">#333e48</p>
-                <button class="btn" onclick="copyContent(event, '.copy-color')">Copy to clipboard</button>
-            </div>
-        </div>
-
     </div>
 
     <script src="app.js"></script>
 </body>
 
-<footer>Pablo Garcia 2023.</footer>
+<footer>Pablo G. Cardone&copy; 2023.</footer>
 
 </html>
